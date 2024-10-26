@@ -1,0 +1,60 @@
+<!-- Goal: Create a Wu-Tang Clan name generator. Present the user with 5 survey questions and based on those answers randomly generate their name. The name doesn't have to be exact names, but Wu-Tang sounding-ish names. Ex: Childish Gambino (who actually got his name from a Wu-Tang name generator). -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		<title>Wu Tang Name Generator</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<form>
+			<p>Are you a dog or cat person?</p>
+			<fieldset>
+				<input type="radio" id="dog" name="dog-or-cat" value="dog">
+				<label for="dog">Dog</label>
+				<input type="radio" id="cat" name="dog-or-cat" value="cat">
+				<label for="cat">Cat</label>
+			</fieldset>
+
+			<p>Morning or evening?</p>
+			<fieldset>
+				<input type="radio" id="morning" name="morning-or-evening" value="morning">
+				<label for="morning">Morning</label>
+				<input type="radio" id="evening" name="morning-or-evening" value="evening">
+				<label for="evening">Evening</label>
+			</fieldset>
+
+			<p>Salty or sweet food?</p>
+			<fieldset>
+				<input type="radio" id="salty" name="salty-or-sweet" value="salty">
+				<label for="salty">Salty</label>
+				<input type="radio" id="sweet" name="salty-or-sweet" value="sweet">
+				<label for="sweet">Sweet</label>
+			</fieldset>
+			
+			<p>Party or relax at home?</p>
+			<fieldset>
+				<input type="radio" id="party" name="party-or-relax" value="party">
+				<label for="party">Party</label>
+				<input type="radio" id="relax" name="party-or-relax" value="relax">
+				<label for="relax">Relax at home</label>
+			</fieldset>
+			
+			<p>Talkative or reserved?</p>
+			<fieldset>
+				<input type="radio" id="talkative" name="talkative-or-reserved" value="talkative">
+				<label for="talkative">Talkative</label>
+				<input type="radio" id="reserved" name="talkative-or-reserved" value="reserved">
+				<label for="reserved">Reserved</label>
+			</fieldset>			
+		
+			<p id="submit">Submit</p>
+			<p id="wu-tang-name"></p>
+		</form>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
